@@ -104,13 +104,14 @@
 		},
 		"spec": {
 			"type": "ClusterIP",
-			"clusterIP": "None",
+			"clusterIP": "172.30.105.00",
 			"selector": {
 				"name": "hazelcast-node-${DEPLOYMENT_NAME}"
 			},
 			"ports": [{
 				"port": 5701,
 				"protocol": "TCP"
+				"targetPort": 8080
 			}]
 		}
 	}, {
